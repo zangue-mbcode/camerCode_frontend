@@ -23,7 +23,7 @@ export class ModifyPostComponent implements OnInit {
         if (title) {
           out += ` title="${title}"`;
         }
-        out += (<any>this.options).xhtml ? '/>' : '>';
+       //out += (<any>this.options).xhtml ? '/>' : '>';
         return out;
       }
     }
