@@ -18,6 +18,8 @@
  * BROWSER POLYFILLS
  */
 
+import 'brace';
+import 'brace/mode/markdown';
 /**
  * IE11 requires the following for NgClass support on SVG elements
  */
@@ -58,7 +60,6 @@
  * Zone JS is required by default for Angular itself.
  */
 import 'zone.js/dist/zone';  // Included with Angular CLI.
-
 
 /***************************************************************************************************
  * APPLICATION IMPORTS

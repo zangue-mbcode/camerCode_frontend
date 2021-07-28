@@ -1,0 +1,15 @@
+<div class="container">
+    <button class="btn btn-link" (click)="onGoBack()"><< Retour</button>
+    <div class="single-post-pane">
+      <div class="single-post-info">
+        <h1>{{ post?.title }}</h1>
+
+        <section [innerHTML]="post.htmlContent">
+
+        </section>
+        <button class="btn btn-success m-1" (click)="onModify()" [disabled]="userId !== post?.userId">Modifier</button>
+        <button class="btn btn-danger m-1" (click)="onDelete()" [disabled]="userId !== post?.userId">Supprimer</button>
+      </div>
+    </div>
+  </div>
+  

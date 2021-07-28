@@ -1,0 +1,15 @@
+<div style="margin: 20px">
+    <form novalidate #form="ngForm">
+        <input type="text" class="form-control" name="title" id="title">
+      <!-- <input type="text" class="form-control" name="Test" [(ngModel)]="content"> -->
+      <md-editor #md="ngModel" name="Content" (onEditorLoaded)="onEditorLoaded($event)"
+      [preRender]="preRender" [postRender]="postRender"
+      (onPreviewDomChanged)="onPreviewDomChanged($event)"
+      [upload]="doUpload" [(ngModel)]="content" [mode]="mode" [options]="options" required maxlength="600" height="400px"></md-editor>
+    </form>
+ 
+
+    <button class="btn btn-default btn-primary" (click)="onSubmit()">Enregistrer</button>
+
+  
+  </div>
